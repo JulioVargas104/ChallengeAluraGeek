@@ -1,4 +1,35 @@
 {
     "productos": [
+      {
+        "name": "MONITOR LED 24\" LG 24GS50F-B",
+        "price": "516.80",
+        "imagen": "https://cyccomputer.pe/58270-home_default/monitor-led-24-lg-24gs50f-b-ultragear-1920x1080-hdmi-dp-1ms180hzamd-freesync.jpg",
+        "id": 1
+      },
+      {
+        "name": "CASE ANTEC CX800 RGB ELITE WHITE",
+        "price": "250.80",
+        "imagen": "https://cyccomputer.pe/58099-medium_default/case-antec-cx800-rgb-elite-white-sin-fuente-vidrio-templado-usb-30usb-20-pn0-761345-10059-5.jpg",
+        "id": 2
+      },
+      {
+        "name": "MSI GEFORCE RTX 4090 24GB GDDR6X",
+        "price": "8284.00",
+        "imagen": "https://cyccomputer.pe/57268-medium_default/msi-geforce-rtx-4090-24gb-gddr6x-384bits-gaming-slim-pn912-v510-400.jpg",
+        "id": 3
+      },
+      {
+        "name": "TECLADO HYPERX ALLOY ORIGINS 60 RGB",
+        "price": "361.00",
+        "imagen": "https://cyccomputer.pe/58014-medium_default/teclado-hyperx-alloy-origins-60-rgb-switch-red-mecanico-ingles-pn4p5n4aa-aba.jpg",
+        "id": 4
+      },
+      {
+        "name": "MOUSE RAZER VIPER V2 PRO WHITE WIRELESS",
+        "price": "513.00",
+        "imagen": "https://cyccomputer.pe/48820-large_default/mouse-razer-viper-v2-pro-white-wireless-pnrz01-04390200-r3u1.jpg",
+        "id": 5
+      }
+
     ]
   }
