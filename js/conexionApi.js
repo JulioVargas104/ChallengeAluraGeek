@@ -1,7 +1,7 @@
-async function listaDeProductos() {
+export async function listaDeProductos() {
   const conexion = await fetch("http://localhost:3001/productos");
 
-  const conexionConvertida = conexion.json(); 
+  const conexionConvertida = await conexion.json(); 
   return conexionConvertida;
 }
 
