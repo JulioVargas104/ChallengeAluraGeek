@@ -1,5 +1,5 @@
 export async function listaDeProductos() {
-  const conexion = await fetch("http://localhost:3001/productos");
+  const conexion = await fetch("https://vercel.com/juliovargas104s-projects/challenge-alura-geek/62EEvte8HrUdYtmzoR2ot1ezrKva/source?f=src%2Fdatabase%2Fdb.json");
 
   const conexionConvertida = await conexion.json(); 
   return conexionConvertida;
@@ -7,7 +7,7 @@ export async function listaDeProductos() {
 
 const nuevoProducto = async (name, price, imagen) => {
   try {
-    const res = await fetch("http://localhost:3001/productos", {
+    const res = await fetch("https://vercel.com/juliovargas104s-projects/challenge-alura-geek/62EEvte8HrUdYtmzoR2ot1ezrKva/source?f=src%2Fdatabase%2Fdb.json", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ const nuevoProducto = async (name, price, imagen) => {
 const borrarProducto = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:3001/productos${id}`,
+      `https://vercel.com/juliovargas104s-projects/challenge-alura-geek/62EEvte8HrUdYtmzoR2ot1ezrKva/source?f=src%2Fdatabase%2Fdb.json${id}`,
       {
         method: "DELETE",
       }
