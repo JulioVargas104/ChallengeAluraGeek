@@ -1,10 +1,4 @@
 {
     "productos": [
-      {
-        "name": "Nintendo Switch",
-        "price": "280.00",
-        "imagen": "https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/c/o/consola-nintendo-switch-neon-47030-default-1.jpg",
-        "id": 2
-      }
     ]
   }
