@@ -1,6 +1,6 @@
 export async function listaDeProductos() {
   const conexion = await fetch(
-    "https://la-api-fake-lyart.vercel.app/productos"
+    "http://localhost:3000/productos"
   );
   const conexionConvertida = await conexion.json(); // Esperar la conversión a JSON
   return conexionConvertida;
@@ -8,7 +8,7 @@ export async function listaDeProductos() {
 
 const nuevoProducto = async (name, price, imagen) => {
   try {
-    const res = await fetch("https://la-api-fake-lyart.vercel.app/productos", {
+    const res = await fetch("http://localhost:3000/productos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ const nuevoProducto = async (name, price, imagen) => {
 const borrarProducto = async (id) => {
   try {
     const res = await fetch(
-      `https://la-api-fake-lyart.vercel.app/productos/${id}`,
+      `http://localhost:3000/productos${id}`,
       {
         method: "DELETE",
       }

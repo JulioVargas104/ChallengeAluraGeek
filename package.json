@@ -1,10 +1,10 @@
 {
-  "name": "new-challenge-alura-geek",
+  "name": "challenge-alura-geek",
   "version": "1.0.0",
-  "description": "",
+  "description": "proyecto ecommerce",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch ./database/db.json --port 3000"
+    "start": "json-server --watch ./db.json --port 3000"
   },
   "keywords": [],
   "author": "",
