@@ -1,14 +1,13 @@
-export async function listaDeProductos() {
-  const conexion = await fetch(
-    "http://localhost:3000/productos"
-  );
-  const conexionConvertida = await conexion.json(); // Esperar la conversión a JSON
+async function listaDeProductos() {
+  const conexion = await fetch("http://localhost:3001/productos");
+
+  const conexionConvertida = conexion.json(); 
   return conexionConvertida;
 }
 
 const nuevoProducto = async (name, price, imagen) => {
   try {
-    const res = await fetch("http://localhost:3000/productos", {
+    const res = await fetch("http://localhost:3001/productos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +23,7 @@ const nuevoProducto = async (name, price, imagen) => {
 const borrarProducto = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/productos${id}`,
+      `http://localhost:3001/productos${id}`,
       {
         method: "DELETE",
       }
