@@ -1,5 +1,5 @@
 export async function listaDeProductos() {
-  const conexion = await fetch("https://vercel.com/juliovargas104s-projects/challenge-alura-geek/62EEvte8HrUdYtmzoR2ot1ezrKva/source?f=src%2Fdatabase%2Fdb.json");
+  const conexion = await fetch("https://fakeapi-tan.vercel.app/productos");
 
   const conexionConvertida = await conexion.json(); 
   return conexionConvertida;
@@ -7,7 +7,7 @@ export async function listaDeProductos() {
 
 const nuevoProducto = async (name, price, imagen) => {
   try {
-    const res = await fetch("https://vercel.com/juliovargas104s-projects/challenge-alura-geek/62EEvte8HrUdYtmzoR2ot1ezrKva/source?f=src%2Fdatabase%2Fdb.json", {
+    const res = await fetch("https://fakeapi-tan.vercel.app/productos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ const nuevoProducto = async (name, price, imagen) => {
 const borrarProducto = async (id) => {
   try {
     const res = await fetch(
-      `https://vercel.com/juliovargas104s-projects/challenge-alura-geek/62EEvte8HrUdYtmzoR2ot1ezrKva/source?f=src%2Fdatabase%2Fdb.json${id}`,
+      `https://fakeapi-tan.vercel.app/productos${id}`,
       {
         method: "DELETE",
       }
