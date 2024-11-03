@@ -5,19 +5,19 @@ export function accionFormulario() {
     botonLimpiar.addEventListener("click", (evento) => {
         evento.preventDefault();
         Swal.fire({
-            title: '¿Está seguro de limpiar los campos?',
-            text: "¡No podrás revertir esto!",
+            title: '¿Seguro que deseas limpiar el formulario?',
+            text: "¡No podrás deshacer la acción!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Sí, limpiarlo!'
+            confirmButtonText: 'Ok'
         }).then((result) => {
             if (result.isConfirmed) {
                 elFormulario.reset();
                 Swal.fire(
-                    '¡Limpiado!',
-                    'Tu formulario ha sido limpiado.',
+                    '!Formulario limpio!',
+                    'Tu formulario se limpió correctamente.',
                     'success'
                 );
             }

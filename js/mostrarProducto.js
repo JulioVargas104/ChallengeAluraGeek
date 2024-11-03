@@ -22,20 +22,20 @@ function crearProducto(name, price, imagen, id) {
     const deleteButton = producto.querySelector("[data-id]");
     deleteButton.addEventListener("click", () => {
         Swal.fire({
-            title: '¿Está seguro de borrar este producto?',
-            text: "¡No podrás revertir esto!",
+            title: '¿Seguro de eliminar este producto?',
+            text: "!No podrás deshacer la acción!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Sí, bórralo!'
+            confirmButtonText: 'Ok'
         }).then(async (result) => {
             if (result.isConfirmed) {
                 await conexionApi.borrarProducto(id);
                 producto.remove();
                 Swal.fire(
-                    '¡Borrado!',
-                    'El producto ha sido borrado.',
+                    '!Producto eliminado!',
+                    'Se eliminó el producto correctamente.',
                     'success'
                 );
             }
@@ -74,7 +74,7 @@ elFormulario.addEventListener("submit", async (evento) => {
         render(); // Volver a renderizar la lista de productos
         Swal.fire(
             '¡Agregado!',
-            'Tu producto ha sido agregado.',
+            'Tu producto ha sido agregado correctamente.',
             'success'
         );
         elFormulario.reset(); // se limpia el formulario después de agregar el producto
